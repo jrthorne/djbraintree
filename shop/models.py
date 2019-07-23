@@ -1,3 +1,5 @@
+from .helpers import TransactionTypes, InstallmentTypes
+from django.conf import settings
 from django.db import models
 import uuid
 
@@ -19,5 +21,5 @@ class Transaction(models.Model):
         ordering = [ '-created' ]
 
     def __str__(self):
-        return '%.2f %s [%s#%s]' % ( self.amount, self.currency, self.method, self.booking_references_display )
+        return '%.2f %s [%s#%s]' % ( self.amount, self.currency, self.method, 'invno' )
 

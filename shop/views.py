@@ -7,21 +7,19 @@ There are four steps to finally process a transaction:
 4. Send transaction details and payment nonce to Braintree (views.py)
 """
 import braintree
-
-from django.contrib.auth.decorators import login_required
-from django.core.urlresolvers import reverse
+from django.conf import settings
+from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import generic
 
 from . import forms
+from .mixins import LoginRequiredMixin
 
-
-class CheckoutView(generic.FormView):
+class CheckoutView(LoginRequiredMixin, generic.FormView):
     """This view lets the user initiate a payment."""
     form_class = forms.CheckoutForm
-    template_name = 'checkout.html'
+    template_name = 'shop/payment.html'
     
-    @method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):
         # We need the user to assign the transaction
         self.user = request.user
@@ -34,19 +32,23 @@ class CheckoutView(generic.FormView):
             braintree_env = braintree.Environment.Sandbox
             
         # Configure Braintree
-        braintree.Configuration.configure(
+        braintree_config = braintree.Configuration(
             braintree_env,
             merchant_id=settings.BRAINTREE_MERCHANT_ID,
             public_key=settings.BRAINTREE_PUBLIC_KEY,
             private_key=settings.BRAINTREE_PRIVATE_KEY,
         )
+        gateway = braintree.BraintreeGateway(braintree_config)
         
         # Generate a client token. We'll send this to the form to
         # finally generate the payment nonce
         # You're able to add something like ``{"customer_id": 'foo'}``,
         # if you've already saved the ID
-        self.braintree_client_token = braintree.ClientToken.generate({})
+        self.braintree_client_token = gateway.client_token.generate({})
         return super(CheckoutView, self).dispatch(request, *args, **kwargs)
+
+    def post(self, *args, **kwargs):
+    	return super().post(*args, **kwargs)
     
     def get_context_data(self, **kwargs):
         ctx = super(CheckoutView, self).get_context_data(**kwargs)

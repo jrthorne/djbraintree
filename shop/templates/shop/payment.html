@@ -1,42 +1,58 @@
 {% extends "base.html" %}
 
 {% block main %}
-  <form method="post" action="." autocomplete="off">
+<h1>The Payments page</h1>
+  <form id="payment-form" method="post" action="." autocomplete="off">
     {% csrf_token %}
     <p>Payments are safely processed with <a href='https://www.braintreepayments.com/' target='_blank'>Braintree</a>.</p>
-    {% if braintree_error %}
-      <div class="alert alert-danger fade in">
-          <button class="close" data-dismiss="alert">&times;</button>
-          {{ braintree_error|safe }}
+    {% if form.errors %}
+      <div>
+          FORM {{ form.errors|safe }}
       </div>
     {% endif %}
-    <div class="braintree-notifications"></div>
-    <div id="braintree-dropin"></div>
-    <input class="btn btn-success btn-lg btn-block" type="submit" value="Pay now!" />
+    {{ form.as_table }}    
   </form>
+
+<div id="dropin-container"></div>
+<button id="submit-button">Pay Now</button>
+  
 {% endblock %}
 
+{% block extrajs %}
+<script src="https://js.braintreegateway.com/web/dropin/1.19.0/js/dropin.min.js"></script>
 <script>
-// Remember? You generated the client token in your view.
-var braintree_client_token = "{{ braintree_client_token }}";
+    var button = document.querySelector('#submit-button');
 
-requirejs(['jquery', 'jsi18n', 'https://js.braintreegateway.com/js/braintree-2.28.0.min.js'], 
-  function($, jsi18n, braintree) {
-    function braintreeSetup() {
-      // Here you tell Braintree to add the drop-in to your division above
-      braintree.setup(braintree_client_token, "dropin", {
-          container: "braintree-dropin"
-          ,onError: function (obj) {
-              // Errors will be added to the html code
-              $('[type=submit]').prop('disabled', false);
-              $('.braintree-notifications').html('<p class="alert alert-danger">' + obj.message + '</p>');
+    braintree.dropin.create({
+      authorization: "{{ braintree_client_token }}",
+      container: '#dropin-container'
+    }, function (createErr, instance) {
+      button.addEventListener('click', function () {
+        instance.requestPaymentMethod(function (err, payload) {
+          if (err == null) {
+            document.forms["payment-form"]["id_payment_method_nonce"].value = payload.nonce;
+            document.getElementById('payment-form').submit();
           }
+        });
       });
-    }
-    braintreeSetup();
-    $('form').submit(function () {
-        $('[type=submit]').prop('disabled', true);
-        $('.braintree-notifications').html('');
     });
-});
+  </script>
 </script>
+<script>
+  /*
+var button = document.querySelector('#submit-button');
+
+braintree.dropin.create({
+  authorization: 'sandbox_g42y39zw_348pk9cgf3bgyw2b',
+  selector: '#dbraintree-dropin'
+}, function (err, instance) {
+  button.addEventListener('click', function () {
+    instance.requestPaymentMethod(function (err, payload) {
+      // Submit payload.nonce to your server
+    });
+  })
+});
+*/
+</script>
+{% endblock extrajs %}
+

@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_enumfield',
+    'shop',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'pds2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -108,7 +110,6 @@ STATIC_URL = '/static/'
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
 ]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static_dev'),
@@ -134,4 +135,5 @@ BRAINTREE_ENVIRONMENT='sandbox'
 BRAINTREE_MERCHANT_ID = 'fcvwb46mwhwb98zf'
 BRAINTREE_PUBLIC_KEY = 'w29c4bywtqmz2bns'
 BRAINTREE_PRIVATE_KEY = 'f6cb66c58185b366bd78b8c37bece1d1'
-BRAINTREE_PRODUCTION = False  # We'll need this later to switch between the sandbox and live accoun
+BRAINTREE_PRODUCTION = False  # We'll need this later to switch between the sandbox and live account
+LOGIN_URL = '/admin/login/'
