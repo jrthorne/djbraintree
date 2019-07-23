@@ -1,0 +1,9 @@
+body {
+    padding-top: 100px; // This value depends on the height of your navbar.
+}
+
+.navbar-text {
+    color: #fff !important;
+    font-size: 0.75rem !important;
+}  
+

@@ -1,0 +1,350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"discounts",
+				"discounts_to_apply"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jason/webapps/tutorials/pds2"
+	],
+	"file_history":
+	[
+		"/home/jason/webapps/tutorials/ella/test_ella/settings/base.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/products/templates/products/product_list.html",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/shopping_cart/models.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/shopping_cart/extras.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/shopping_cart/views.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/shopping_cart/templates/shopping_cart/checkout.html",
+		"/home/jason/webapps/tutorials/braintree_flask_example/templates/checkouts/new.html",
+		"/home/jason/webapps/tutorials/braintree_flask_example/templates/layout.html",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/shopping_cart/admin.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/cart/urls.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/products/urls.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/shopping_cart/urls.py",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/cart/settings.py",
+		"/home/jason/webapps/tutorials/braintree_flask_example/app.py",
+		"/home/jason/webapps/tutorials/braintree_flask_example/gateway/__init__.py",
+		"/home/jason/webapps/tutorials/braintree_flask_example/requirements.txt",
+		"/home/jason/webapps/tutorials/djstripe/store/urls.py",
+		"/home/jason/webapps/tutorials/braintree_flask_example/.env",
+		"/home/jason/webapps/tutorials/braintree_flask_example/example.env",
+		"/home/jason/webapps/tutorials/braintree_flask_example/README.md",
+		"/home/jason/webapps/tutorials/djbraintree/Shopping_cart/README.md",
+		"/home/jason/webapps/tutorials/djstripe/djstripe/settings.py",
+		"/home/jason/webapps/tutorials/djbraintree/djbraintree/urls.py",
+		"/home/jason/webapps/tutorials/djbraintree/templates/base.html",
+		"/home/jason/webapps/tutorials/djbraintree/shop/templates/shop/brainsub.html",
+		"/home/jason/webapps/tutorials/djbraintree/shop/views.py",
+		"/home/jason/webapps/tutorials/djbraintree/shop/templates/shop/checkout.html",
+		"/home/jason/webapps/tutorials/djbraintree/djbraintree/settings.py",
+		"/home/jason/webapps/tutorials/djbraintree/shop/forms.py",
+		"/home/jason/webapps/tutorials/djbraintree/shop/urls.py",
+		"/home/jason/webapps/tutorials/djstripe/store/templates/store/subscribe.html",
+		"/home/jason/webapps/tutorials/djstripe/store/views.py",
+		"/home/jason/webapps/tutorials/djstripe/templates/base.html",
+		"/home/jason/webapps/tutorials/stripe/chargingpoc/chargingpoc/settings.py",
+		"/home/jason/webapps/tutorials/stripe/chargingpoc/README.md",
+		"/home/jason/webapps/tutorials/stripe/stripe/settings.py",
+		"/home/jason/webapps/tutorials/realvue/templates/base.html",
+		"/home/jason/webapps/tutorials/realvue/realvue/settings.py",
+		"/home/jason/webapps/tutorials/realvue/realworldvue/templates/realworldvue/index.html",
+		"/home/jason/webapps/tutorials/real-world-vue/src/router.js",
+		"/home/jason/webapps/tutorials/real-world-vue/src/main.js",
+		"/home/jason/webapps/tutorials/rssfeed/templates/socks.html",
+		"/home/jason/webapps/tutorials/rssfeed/rssfeed/settings.py",
+		"/home/jason/webapps/tutorials/rssfeed/rssfeed/urls.py",
+		"/home/jason/webapps/tutorials/rssfeed/templates/base.html",
+		"/home/jason/webapps/tutorials/rssfeed/static_source/css/style.css",
+		"/home/jason/webapps/tutorials/rssfeed/static_source/js/vue.js",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/templates/admin/change_form.html",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/admin.py",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/models.py",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/templates/admin/base_site.html",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/templates/admin/pagination.html",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/templatetags/magicfilters.py",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/feeds.py",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/views.py",
+		"/home/jason/webapps/tutorials/rssfeed/templates/base.py",
+		"/home/jason/webapps/tutorials/rssfeed/policebeat/templates/policebeat/news_list.html",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/introcart/settings/base.py",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/products/views.py",
+		"/home/jason/webapps/introcart_devtools/Vagrantfile",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/src/js/Store/modules/cart_module.js",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/common/views.py",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/src/js/BookingFlow/BookingForm/Insurance.vue",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/src/js/Slider.vue",
+		"/home/jason/webapps/introcart_devtools/introcart_wagtail/introcart/settings/local.py",
+		"/home/jason/webapps/introcart_devtools/setup.sh",
+		"/home/jason/webapps/introcart_devtools/local_example.py",
+		"/home/jason/webapps/introcart_devtools/setup.sql",
+		"/home/jason/webapps/introcart_devtools/README.txt",
+		"/home/jason/webapps/introcart_devtools/bashrc"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pds2.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"messages.html",
+				"djbraintree/Shopping_cart/templates/messages.html"
+			],
+			[
+				"extras.py",
+				"djbraintree/Shopping_cart/shopping_cart/extras.py"
+			],
+			[
+				"shopping_cart/checkout.html",
+				"djbraintree/Shopping_cart/shopping_cart/templates/shopping_cart/checkout.html"
+			],
+			[
+				"base.py",
+				"ella/test_ella/settings/base.py"
+			],
+			[
+				"layout.html",
+				"braintree_flask_example/templates/layout.html"
+			],
+			[
+				"require",
+				"braintree_flask_example/requirements.txt"
+			],
+			[
+				"checkout.h",
+				"djbraintree/shop/templates/shop/checkout.html"
+			],
+			[
+				"shop/forms.py",
+				"djbraintree/shop/forms.py"
+			],
+			[
+				"settings.py",
+				"djstripe/djstripe/settings.py"
+			],
+			[
+				"css/style.css",
+				"rssfeed/static_source/css/style.css"
+			],
+			[
+				"settings",
+				"rssfeed/rssfeed/settings.py"
+			],
+			[
+				"products/models.py",
+				"introcart_wagtail/products/models.py"
+			],
+			[
+				"introcart/templates/base.html",
+				"introcart_wagtail/introcart/templates/base.html"
+			],
+			[
+				"src/js/bookingflow/zabutocalendar.vue",
+				"introcart_wagtail/src/js/BookingFlow/ZabutoCalendar.vue"
+			],
+			[
+				"src/js/store/modules/calendar_module.js",
+				"introcart_wagtail/src/js/Store/modules/calendar_module.js"
+			],
+			[
+				"vagra",
+				"Vagrantfile"
+			],
+			[
+				"local.py",
+				"introcart_wagtail/introcart/settings/local.py"
+			],
+			[
+				"src/js/slider.vue",
+				"introcart_wagtail/src/js/Slider.vue"
+			],
+			[
+				"src/js/store/modules/cart_module.js",
+				"introcart_wagtail/src/js/Store/modules/cart_module.js"
+			],
+			[
+				"src/js/bookingflow/bookingform/insurance.vue",
+				"introcart_wagtail/src/js/BookingFlow/BookingForm/Insurance.vue"
+			],
+			[
+				"setup.sh",
+				"setup.sh"
+			],
+			[
+				"local",
+				"local_example.py"
+			],
+			[
+				"setup.sql",
+				"setup.sql"
+			],
+			[
+				"bashrc",
+				"bashrc"
+			],
+			[
+				"readme",
+				"README.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/webapps/introcart_devtools/cart.sublime-project"
+			],
+			[
+				"crow",
+				"~/webapps/crowd88_devtools/crowd88.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
